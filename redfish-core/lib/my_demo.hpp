@@ -143,6 +143,7 @@ inline void handleMyDemoPatch(
 
 inline void requestRoutesMyDemo(App& app)
 {
+    std::cout << "MyDemo TEST" << std::endl;
     BMCWEB_ROUTE(app, "/redfish/v1/MyDemo/")
         .privileges(redfish::privileges::getMyDemo) 
         .methods(boost::beast::http::verb::get)(
